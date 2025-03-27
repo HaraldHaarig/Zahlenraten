@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Number Guessing Game</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container.fluid">
+      <div class="headers">
+          <div id="header"><h1>Willkommen beim Zahlenraten!</h1></div>
+          <div class="row justify-content-md-center mt-4 mb-4">
+              <div id="darkmode" class="col-1"><button onclick="enableDarkmode()" id="darkmodebutton">Darkmode</button></div>
+              <div id="header2" class="col-6"><h2>Errate die Zufallszahl zwischen 0-100! Du hast 10 Versuche.</h2></div>
+              <div id="darkmode" class="col-1"><button onclick="enableWhitemode()" id="whitemodebutton">Whitemode</button></div>
+          </div> 
+        </div>
+        <div class="row justify-content-md-center">
+          <div id="newgamebutton" class="col-1"><button onclick="newGame()" id="newgame">New Game</button></div>
+          <div id="inputfield" class="col-3"><input type="number" id="input" placeholder="Enter your guess"></div>
+          <div id="checkbutton" class="col-1"><button onclick="checkGuess()" id="check">Check</button></div>
+        </div>
+        <div><p id="message"></p></div>
+        <div><p id="attempts">Versuche: <span id="counternumber"></span></p></div>
+        <div id="gif"></div>
+  </div>
+  
+  
+</body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</html>
